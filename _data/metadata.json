@@ -1,7 +1,7 @@
 {
   "title": "Sam Dugdale Blog",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "url": "https://frosty-euler-57d6ec.netlify.app/",
+  "description": "Home Link",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",
