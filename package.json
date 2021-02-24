@@ -1,7 +1,7 @@
 {
-  "name": "Sam Dugdale Blog",
+  "name": "eleventy-base-blog",
   "version": "5.0.2",
-  "description": "SD Blog",
+  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SamDugdale/eleventy-base-blog"
+    "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
   "author": {
-    "name": "Sam Dugdale",
-    "email": "dugdalewebdev@gmail.com",
-    "url": "https://samdugdale.github.io/"
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
   },
   "license": "MIT",
   "bugs": {
