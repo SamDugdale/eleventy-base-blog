@@ -5,10 +5,13 @@
   "scripts": {
     "start": "npm-run-all --parallel dev:*",
     "build": "run-s prod:*",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
     "dev:eleventy": "eleventy --serve",
     "dev:parcel": "parcel watch ./_assets/js/main.js --out-dir ./_site/assets",
     "prod:eleventy": "eleventy",
-    "prod:parcel": "parcel build ./_assets/js/main.js --out-dir ./_site/assets"
+    "prod:parcel": "parcel build ./_assets/js/main.js --out-dir ./_site/assets",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
