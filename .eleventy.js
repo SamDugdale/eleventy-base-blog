@@ -15,17 +15,14 @@ module.exports = function(eleventyConfig) {
 //added layout alias
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-  eleventyConfig.addLayoutAlias("blog", "layouts/post.njk");
+  eleventyConfig.addLayoutAlias("blog", "layouts/blog.njk");
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
+
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
 
-  module.exports = function(eleventyConfig) {
-
-    eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
-
-};
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
