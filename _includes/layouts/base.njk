@@ -14,8 +14,13 @@
   </head>
   <body>
     <header>
+     <div class="container-fluid line">
+          <div class="row">
+            <div class="col-12 sb d-flex justify-content-center align-items-center p-4 pb-1"></div>
+          </div>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-      
+        </div>
+      </div>
 
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
@@ -30,9 +35,18 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+ <footer>
+      <div class="container text-center p-2">
+        <hr>
+         	
+        <br>&#169; Sam Dugdale 2021
+      </div>
+    </footer>
+
 
     <!-- Current page: {{ page.url | url }} -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
