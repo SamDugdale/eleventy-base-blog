@@ -6,6 +6,13 @@
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/js/jquery.nav.js | url }}">
+    <link rel="stylesheet" href="{{ '/js/jquery.slicknav.js | url }}">
+    <link rel="stylesheet" href="{{ '/js/main.js | url }}">
+    <link rel="stylesheet" href="{{ '/js/scrolling-nav.js | url }}">
+    <link rel="stylesheet" href="{{ '/js/wow.js | url }}">
+
+
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
@@ -14,31 +21,46 @@
   </head>
   <body>
     <header>
-     <div class="container-fluid line">
-          <div class="row">
-            <div class="col-12 sb d-flex justify-content-center align-items-center p-4 pb-1"></div>
+     <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+     <div class="container">
+       <div class="row">
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            </button>
           </div>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+     <div class="collapse navbar-collapse" id="main-navbar">
+          <h1 class="home"><li class="nav-item active" class="nav-item"><a class="nav-link" href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
         </div>
       </div>
-
+  
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul>
+       </div>
+   </div>
+     </nav>
     </header>
 
+
+<div style = "margin-bottom: 75px;"></div>
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
       {{ content | safe }}
     </main>
 
+
  <footer>
       <div class="container text-center p-2">
         <hr>
-         	
+        Static 11ty site, hosted on Netlify, styled using Bootstrap. 	
         <br>&#169; Sam Dugdale 2021
       </div>
     </footer>
