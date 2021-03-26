@@ -15,9 +15,9 @@ eleventyNavigation:
     <div class="col-12 col-lg-5 text-center">
       <form name="contact" method="POST" data-netlify="true">
         <label for="fname" class="form-label">First Name:</label><br>
-        <input type="text" id="name" name="name" class="form-control" required><br><br>
+        <input type="text" id="fname" name="First Name" class="form-control" required><br><br>
         <label for="sname" class="form-label">Surname:</label><br>
-        <input type="text" id="name" name="name" class="form-control" required><br><br>
+        <input type="text" id="sname" name="Surname" class="form-control" required><br><br>
         <label for="email" class="form-label">Email:</label><br>
         <input type="email" id="email" name="email" class="form-control" required><br><br>
         <label for="message" class="form-label">Message:</label><br>
