@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light|Source+Sans+Pro:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Farsan&display=swap');
 
 html {
@@ -85,123 +84,6 @@ ol li {
   letter-spacing: 0.1rem;
 }
 
-/*=======================
-	Personal CSS
-=========================*/
-/* 
-#personal-area {
-	background-image: url('http://via.placeholder.com/1500x800');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 680px;
-	position:relative;
-	background-position: center;
-}
-#personal-area .personal-single {
-	position: relative;
-	z-index: 3;
-}
-#personal-area .personal-single::before {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: url('images/banner-pattern.png');
-	opacity: 0.5;
-	content: "";
-	z-index: -1;
-}
-#personal-area .personal-single::after {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	opacity: 0.5;
-	content: "";
-	z-index: -2;
-}
-#personal-area .personal-text {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 100%;
-	height: 680px;
-	text-align: center;
-}
-*/
-/* Personal Animate Text */
-/*
-#personal-area .personal-text h1 {
-	color: #fff;
-	font-size: 50px;
-	text-transform: uppercase;
-	font-weight: 800;
-	margin-bottom: 25px;
-}
-#personal-area .personal-text h2 {
-	font-size: 25px;
-	text-transform: uppercase;
-	color: #eee;
-	margin-bottom: 25px;
-}
-#personal-area .personal-text h2 span {
-	display:inline-block;
-	padding:0;
-}
-#personal-area .personal-text h2 b{
-	font-weight:700;
-}
-#personal-area .my-info p {
-	color: #fff;
-	font-size: 15px;
-}
-#personal-area .personal-text .btn {
-	background: #fff;
-	color: #353535;
-	margin-right: 20px;
-	padding: 13px 35px;
-	overflow:hidden;
-}
-#personal-area .personal-text .btn:hover{
-	color:#fff;
-}
-#personal-area .personal-text .btn.primary{
-	color:#fff;
-}
-#personal-area .personal-text .btn i{
-	margin-right:10px;
-}
-#personal-area .personal-text .btn:hover i{
-  opacity: 0;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-animation-name: hvr-icon-drop;
-  animation-name: hvr-icon-drop;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-#personal-area .personal-text .btn:last-child{
-	margin:0;
-}
-*/
 .section-titile-bg {
   display: inline;
   font-size: 115px;
@@ -791,6 +673,7 @@ a.back-to-top:focus {
   }
 }
 
+
 /* ==========================================================================
 3. Hero Area
 ========================================================================== */
@@ -1145,6 +1028,10 @@ a:not([href]):not([tabindex]):hover {
 /* Footer Area Start */
 .footer-area {
   background: #1C1C20;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
 }
 
 .footer-area .footer-text p {

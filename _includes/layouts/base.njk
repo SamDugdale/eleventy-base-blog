@@ -6,6 +6,7 @@
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/slicknav.css | url }}">
     <link rel="stylesheet" href="{{ '/css/responsive | url }}">
     <link rel="stylesheet" href="{{ '/css/slide-style.css | url }}">
@@ -18,6 +19,7 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <body>
     <header>
@@ -49,11 +51,16 @@
      </nav>
     </header>
 
-
+<div id="content" class="section-padding" class="container">
 <div style = "margin-bottom: 75px;"></div>
-    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+         <div class="mx-auto" style="width: 40em; class="text-center">
+    <main{% if templateClass %} class="text-center" class="{{ templateClass }}"{% endif %}>
 
       {{ content | safe }}
+
+         </div>
+</div>
+</div>
     </main>
 
 
@@ -68,6 +75,11 @@
       </div>
     </div>
   </footer>
+
+<!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
 
    <script src="js/jquery-min.js"></script>
   <script src="js/popper.min.js"></script>
