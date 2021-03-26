@@ -1,9 +1,9 @@
 {
   "title": "Sam Dugdale Blog",
-  "url": "https://frosty-euler-57d6ec.netlify.app/",
+  "url": "https://samdugdaleblog.netlify.app/",
   "description": "Home Link",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "I am writing about my web developement related experiances",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://example.com/"
