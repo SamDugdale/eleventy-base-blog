@@ -234,6 +234,12 @@ button:focus {
   background: #211F1F;
 }
 
+#contactf {
+  text-align: center;
+  margin: 0 auto; 
+width:1000px;
+}
+
 /* ScrollToTop */
 a.back-to-top {
   display: none;
@@ -275,17 +281,6 @@ a.back-to-top:focus {
   z-index: 9999999999;
 }
 
-.square-spin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -40px;
-  margin-top: -40px;
-}
-
-.square-spin img {
-  max-width: 64px;
-}
 
 .section-padding {
   padding: 60px 0;
@@ -324,13 +319,6 @@ a.back-to-top:focus {
   margin-bottom: 5px;
 }
 
-.about-profile .pro-title:after {
-  position: absolute;
-  content: ':';
-  color: #040404;
-  font-size: 14px;
-  left: 81px;
-}
 
 .about-profile .admin-sign {
   position: absolute;
@@ -338,86 +326,6 @@ a.back-to-top:focus {
   bottom: 10px;
 }
 
-
-/* Resume */
-.timeline {
-  position: relative;
-}
-
-.timeline .timelin-title {
-  font-size: 20px;
-  text-transform: uppercase;
-  margin-left: 25px;
-}
-
-.timeline li {
-  padding: 0 20px 20px 30px;
-  list-style: none;
-  border-left: 2px solid #f1f1f1;
-}
-
-.timeline li .content-text {
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-.timeline li .line-title {
-  font-size: 16px;
-  line-height: 16px;
-}
-
-.timeline li span {
-  font-size: 12px;
-  padding: 9px 0;
-  display: block;
-}
-
-.timeline li .line-text {
-  color: #888;
-  line-height: 18px;
-}
-
-.timeline li:first-child:before {
-  border: 0;
-  background: none;
-  position: relative;
-}
-
-.timeline li:last-child {
-  padding: 0 20px 0px 30px;
-}
-
-.timeline li:before {
-  content: "";
-  border: solid 2px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  font-size: 8px;
-  margin-left: -35px;
-  font-weight: 400;
-  background: #fff;
-  display: block;
-  position: absolute;
-  margin-top: 18px;
-  border-color: #F2784B !important;
-}
-
-.timeline li:first-child i {
-  font-size: 20px;
-  float: left;
-  margin-left: -30px;
-  line-height: 50px;
-  border-radius: 30px;
-  margin: -12px -55px;
-  background: #F2784B;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-}
 
 .navbar-brand {
   position: relative;

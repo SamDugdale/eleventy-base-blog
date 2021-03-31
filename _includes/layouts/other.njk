@@ -3,14 +3,6 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 <h1>{{ title }}</h1>
-   <h5><time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></h5>
-
-<!-- <p>
-  <span style="font-weight: bold;">Rating:</span>
-  {{ rating }}
-</p> -->
-
-<img src="{{ thumbnail | url }}"/> 
  
 {{ content | safe }}
 <hr>
